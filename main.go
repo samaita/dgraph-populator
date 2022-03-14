@@ -89,13 +89,13 @@ func init() {
 
 	checkpoint = time.Now()
 	log.Printf("Generate Customer ")
-	CustomerMap = GenerateCustomerMap(250000)
+	CustomerMap = GenerateCustomerMap(10000)
 	GenerateRDFCustomer(CustomerMap)
 	log.Printf("Time Spent %s \n", time.Since(checkpoint))
 
 	checkpoint = time.Now()
 	log.Printf("Generate Product ")
-	ProductMap = GenerateProductMap(10000)
+	ProductMap = GenerateProductMap(1000)
 	GenerateRDFProduct(ProductMap)
 	log.Printf("Time Spent %s \n", time.Since(checkpoint))
 
